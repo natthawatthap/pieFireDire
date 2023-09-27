@@ -1,0 +1,41 @@
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: performance-test-script.js
+     output: json (result.json)
+
+  scenarios: (100.00%) 1 scenario, 1 max VUs, 10m30s max duration (incl. graceful stop):
+           * default: 1 iterations for each of 1 VUs (maxDuration: 10m0s, gracefulStop: 30s)
+
+
+running (00m01.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+default   [   0% ] 1 VUs  00m01.0s/10m0s  0/1 iters, 1 per VU
+
+     ✓ Status is 200
+
+     checks.........................: 100.00% ✓ 1        ✗ 0  
+     data_received..................: 228 B   158 B/s
+     data_sent......................: 92 B    64 B/s
+     http_req_blocked...............: avg=1.52ms min=1.52ms med=1.52ms max=1.52ms p(90)=1.52ms p(95)=1.52ms
+     http_req_connecting............: avg=355µs  min=355µs  med=355µs  max=355µs  p(90)=355µs  p(95)=355µs 
+     http_req_duration..............: avg=1.44s  min=1.44s  med=1.44s  max=1.44s  p(90)=1.44s  p(95)=1.44s 
+       { expected_response:true }...: avg=1.44s  min=1.44s  med=1.44s  max=1.44s  p(90)=1.44s  p(95)=1.44s 
+     http_req_failed................: 0.00%   ✓ 0        ✗ 1  
+     http_req_receiving.............: avg=226µs  min=226µs  med=226µs  max=226µs  p(90)=226µs  p(95)=226µs 
+     http_req_sending...............: avg=37µs   min=37µs   med=37µs   max=37µs   p(90)=37µs   p(95)=37µs  
+     http_req_tls_handshaking.......: avg=0s     min=0s     med=0s     max=0s     p(90)=0s     p(95)=0s    
+     http_req_waiting...............: avg=1.44s  min=1.44s  med=1.44s  max=1.44s  p(90)=1.44s  p(95)=1.44s 
+     http_reqs......................: 1       0.692347/s
+     iteration_duration.............: avg=1.44s  min=1.44s  med=1.44s  max=1.44s  p(90)=1.44s  p(95)=1.44s 
+     iterations.....................: 1       0.692347/s
+     vus............................: 1       min=1      max=1
+     vus_max........................: 1       min=1      max=1
+
+
+running (00m01.4s), 0/1 VUs, 1 complete and 0 interrupted iterations
+default ✓ [ 100% ] 1 VUs  00m01.4s/10m0s  1/1 iters, 1 per VU
